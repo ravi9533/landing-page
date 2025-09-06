@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyBrand</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to My Landing Page</h1>
+    <p>Build something amazing with HTML & CSS</p>
+    <a href="#features" class="btn">Get Started</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Our Features</h2>
+    <div class="feature-container">
+      <div class="feature-box">
+        <h3>Fast</h3>
+        <p>Optimized and quick to load.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Responsive</h3>
+        <p>Works on all screen sizes.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Creative</h3>
+        <p>Modern design with style.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We create beautiful, responsive, and user-friendly websites. 
+       This project helps beginners practice and improve web design skills.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyBrand. All rights reserved.</p>
+  </footer>
+</body>
+</html>
