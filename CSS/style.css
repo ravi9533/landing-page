@@ -1,0 +1,84 @@
+/* Modern Landing Page Styles */
+* { margin:0;padding:0;box-sizing:border-box;}
+html { scroll-behavior: smooth; }
+body {
+  font-family:'Poppins',sans-serif;
+  background:#8585bb; color:#f1f1f8;
+}
+.container { max-width:1100px; margin:0 auto; padding:2rem 1rem; }
+
+.header { background:#2732b0; position:sticky; top:0; z-index:10; }
+.nav {
+  display:flex; justify-content:space-between; align-items:center;
+}
+.nav-links a {
+  margin-left:1.5rem; color:#f1f1f8; text-decoration:none;
+  transition: color .3s;
+}
+.nav-links a:hover { color:#ffffff; }
+.logo { font-size:1.75rem; font-weight:600; color:#ff6ec7; }
+
+.hero {
+  text-align:center; padding:6rem 1rem;
+  background: linear-gradient(135deg,#282f7b,#404084);
+}
+.hero h1 { font-size:2.75rem; margin-bottom:1rem; }
+.hero p { font-size:1.25rem; margin-bottom:2rem; }
+.btn {
+  background:#ff6ec7; color:#1e1e2f; padding:1rem 2rem;
+  border:none; border-radius:5px; font-size:1rem;
+  transition: background .3s;
+}
+.btn:hover { background:#e55aa0; }
+
+.features {
+  background:#27293d; padding:4rem 1rem;
+  text-align:center;
+}
+.feature-grid {
+  display:grid; gap:2rem;
+  grid-template-columns:1fr;
+  margin-top:2rem;
+}
+.feature {
+  background:#1e1e2f; padding:2rem; border-radius:10px;
+  transition: transform .3s;
+}
+.feature:hover { transform: translateY(-5px); }
+.feature img { width:60px; margin-bottom:1rem; }
+
+@media (min-width:768px) {
+  .feature-grid { grid-template-columns:repeat(3,1fr); }
+}
+
+.about {
+  padding:4rem 1rem; text-align:center;
+}
+
+.testimonials {
+  padding:4rem 2rem; text-align:center; background:#1e1e2f;
+}
+.testimonials blockquote {
+  font-style:italic; margin-bottom:1rem;
+}
+.testimonials cite { font-weight:600; color:#30f0b0; }
+
+.contact {
+  padding:4rem 1rem; text-align:center;
+}
+.contact a { color:#30f0b0; transition: color .3s;}
+.contact a:hover { color:#ffffff;}
+
+.footer {
+  background:#27293d; padding:2rem 1rem; text-align:center;
+}
+.social a {
+  margin:0 .75rem; color:#f1f1f8; transition: color .3s;
+}
+.social a:hover { color:#ff6ec7; }
+
+/* Responsive font adjustments */
+@media (max-width:480px) {
+  .hero h1 { font-size:2rem; }
+  .hero p { font-size:1rem; }
+}
